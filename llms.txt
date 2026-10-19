@@ -29,3 +29,6 @@ Web: https://dabgestion.com/
 - Qué incluye un plano contra incendio: https://dabgestion.com/guias/que-incluye-plano-contra-incendio/
 - Documentación contra incendio para comercios e industrias: https://dabgestion.com/guias/documentacion-incendio-habilitacion/
 - Diferencia entre plano, memoria técnica y carga de fuego: https://dabgestion.com/guias/plano-memoria-carga-fuego/
+- Cuánto tarda un plano contra incendio: https://dabgestion.com/guias/cuanto-tarda-plano-contra-incendio/
+- Qué datos necesito enviar para un plano contra incendio: https://dabgestion.com/guias/datos-para-plano-contra-incendio/
+- Errores frecuentes en planos contra incendio: https://dabgestion.com/guias/errores-frecuentes-planos-incendio/
