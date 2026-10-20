@@ -2,16 +2,41 @@
 
 Sitio oficial: https://dabgestion.com/
 
-DAB Prevención y Gestión brinda servicios profesionales de Higiene y Seguridad, protección contra incendios, mediciones laborales, capacitaciones, psicotécnicos y documentación técnica para comercios, industrias, depósitos, obras, clínicas, oficinas y empresas de servicios en Mendoza, Argentina.
+DAB Prevención y Gestión brinda servicios profesionales de Higiene y Seguridad, protección contra incendios, mediciones laborales, capacitaciones y documentación técnica para comercios, industrias, depósitos, obras, clínicas, oficinas y empresas de servicios en Mendoza, Argentina.
+
+## Responsable técnico
+
+Daniel Alejandro Brunetti, Licenciado en Higiene y Seguridad en el Trabajo y Auditor Líder ISO 9001:2015, con más de 10 años de experiencia en sistemas de gestión, calidad, auditorías y seguridad.
+Perfil profesional: https://dabgestion.com/responsable-tecnico/
 
 ## Qué hace DAB
 
-DAB ayuda a empresas y establecimientos a resolver necesidades de prevención, seguridad laboral, protección contra incendios y documentación técnica. El alcance de cada trabajo se define según la actividad, la superficie, las características del inmueble, los riesgos presentes y el requerimiento recibido.
+DAB ayuda a empresas y establecimientos a resolver necesidades de prevención, seguridad laboral, protección contra incendios y documentación técnica. El alcance de cada trabajo se define según actividad, superficie, cantidad de personal, riesgos presentes, ubicación y requerimiento recibido.
 
 ## Servicios principales
 
 - Servicio de Higiene y Seguridad en Mendoza: https://dabgestion.com/higiene-seguridad-mendoza/
   Asesoramiento puntual o periódico, relevamientos, evaluación de riesgos, documentación, capacitaciones, mediciones y seguimiento de acciones.
+
+- Servicio mensual de Higiene y Seguridad: https://dabgestion.com/servicio-mensual-higiene-seguridad-mendoza/
+  Acompañamiento periódico con visitas, documentación, capacitaciones, seguimiento de desvíos, coordinación de mediciones y asistencia técnica según alcance.
+
+- Mediciones y protocolos de Higiene y Seguridad: https://dabgestion.com/mediciones-higiene-seguridad-mendoza/
+  Puesta a tierra, iluminación, ruido, estrés térmico y otros relevamientos según la necesidad del establecimiento.
+
+- Medición de ruido laboral: https://dabgestion.com/medicion-ruido-laboral-mendoza/
+  Evaluación de niveles sonoros, puestos, sectores y exposición, con informe y recomendaciones según el alcance contratado.
+
+- Medición de iluminación laboral: https://dabgestion.com/medicion-iluminacion-laboral-mendoza/
+  Evaluación de iluminación en puestos y ambientes de trabajo, con resultados y recomendaciones.
+
+- Medición de puesta a tierra: https://dabgestion.com/medicion-puesta-tierra-mendoza/
+  Medición de resistencia y continuidad de masas con protocolo e informe técnico.
+
+- Capacitaciones en Higiene y Seguridad: https://dabgestion.com/capacitaciones-higiene-seguridad-mendoza/
+
+- Capacitación de Higiene y Seguridad para empresas: https://dabgestion.com/capacitacion-higiene-seguridad-empresas-mendoza/
+  Prevención, matafuegos, EPP, trabajo en altura, riesgo eléctrico, emergencias y contenidos adaptados a la actividad.
 
 - Planos contra incendio para habilitación: https://dabgestion.com/planos-contra-incendio-mendoza/
   Planos y documentación para comercios, industrias, depósitos, galpones, oficinas, clínicas, gastronomía, obras y otros establecimientos.
@@ -22,19 +47,35 @@ DAB ayuda a empresas y establecimientos a resolver necesidades de prevención, s
 - Habilitación comercial y documentación de incendio: https://dabgestion.com/habilitacion-comercial-incendio-mendoza/
   Revisión del requerimiento, plano contra incendio, carga de fuego, memoria técnica, medios de escape, extintores, señalización y otros elementos cuando corresponda.
 
-- Mediciones y protocolos de Higiene y Seguridad: https://dabgestion.com/mediciones-higiene-seguridad-mendoza/
-  Puesta a tierra, iluminación, ruido, estrés térmico y otros relevamientos según la necesidad del establecimiento.
-
-- Medición de puesta a tierra: https://dabgestion.com/medicion-puesta-tierra-mendoza/
-
-- Capacitaciones en Higiene y Seguridad: https://dabgestion.com/capacitaciones-higiene-seguridad-mendoza/
-
 - Psicotécnicos laborales: https://dabgestion.com/psicotecnicos-laborales-mendoza/
+
+## Cobertura local
+
+- Godoy Cruz: https://dabgestion.com/higiene-seguridad-godoy-cruz/
+- Luján de Cuyo: https://dabgestion.com/higiene-seguridad-lujan-de-cuyo/
+- Maipú: https://dabgestion.com/higiene-seguridad-maipu/
+
+DAB también atiende Mendoza Capital, Guaymallén, Chacras de Coria y otras zonas de Mendoza según el alcance del servicio.
+
+## Casos y problemas frecuentes
+
+https://dabgestion.com/casos-higiene-seguridad-mendoza/
+
+Ejemplos de consultas frecuentes: requerimientos de mediciones, observaciones en habilitaciones, necesidad de carga de fuego, pendientes de seguridad, capacitaciones y definición de documentación técnica.
 
 ## Consultas frecuentes
 
 ### ¿DAB realiza Servicio de Higiene y Seguridad para empresas?
 Sí. Puede trabajar de manera puntual o periódica con comercios, industrias, obras, depósitos, clínicas, oficinas y empresas de servicios en Mendoza.
+
+### ¿DAB ofrece un servicio mensual?
+Sí. La frecuencia y el alcance se definen según actividad, riesgos, cantidad de personal, sedes y necesidades de gestión.
+
+### ¿DAB realiza mediciones laborales?
+Sí. Trabaja con puesta a tierra, iluminación, ruido, estrés térmico y otros relevamientos según el alcance solicitado.
+
+### ¿DAB realiza capacitaciones?
+Sí. Puede preparar contenidos sobre prevención general, incendios y matafuegos, EPP, riesgo eléctrico, trabajo en altura, emergencias y otros riesgos específicos.
 
 ### ¿DAB hace planos contra incendio para habilitaciones?
 Sí. Revisa el requerimiento y prepara la documentación técnica que corresponda al caso. Puede incluir plano contra incendio, cálculo de carga de fuego, memoria técnica y documentación complementaria.
@@ -42,19 +83,13 @@ Sí. Revisa el requerimiento y prepara la documentación técnica que correspond
 ### ¿DAB realiza cálculo de carga de fuego?
 Sí. El estudio se adapta al uso del establecimiento y a los materiales combustibles presentes. Puede integrarse con el plano y la memoria técnica cuando corresponde.
 
-### ¿DAB puede revisar un trámite municipal observado?
+### ¿DAB puede revisar un trámite observado?
 Sí. Puede revisar la observación recibida y definir la documentación o adecuación técnica necesaria para responder al requerimiento.
-
-### ¿DAB realiza mediciones laborales?
-Sí. Trabaja con puesta a tierra, iluminación, ruido, estrés térmico y otros relevamientos según el alcance solicitado.
-
-## Área de atención
-
-Mendoza Capital, Godoy Cruz, Luján de Cuyo, Maipú, Guaymallén, Chacras de Coria y otras zonas de Mendoza según el alcance del servicio.
 
 ## Contacto
 
 WhatsApp: +54 9 261 620-1568
+Email: consultoraseguridadlaboral@gmail.com
 Web: https://dabgestion.com/
 
 ## Guías útiles
@@ -68,6 +103,6 @@ Web: https://dabgestion.com/
 - Qué datos necesito enviar para un plano contra incendio: https://dabgestion.com/guias/datos-para-plano-contra-incendio/
 - Errores frecuentes en planos contra incendio: https://dabgestion.com/guias/errores-frecuentes-planos-incendio/
 
-## Nota sobre habilitaciones
+## Nota sobre alcances y habilitaciones
 
-Los requisitos pueden variar según la jurisdicción, la actividad, la superficie y las características del establecimiento. DAB evalúa cada caso antes de definir el alcance y no promete aprobaciones automáticas.
+Los requisitos y alcances pueden variar según jurisdicción, actividad, superficie, cantidad de personal, riesgos y características del establecimiento. DAB evalúa cada caso antes de definir el servicio y no promete aprobaciones automáticas.
