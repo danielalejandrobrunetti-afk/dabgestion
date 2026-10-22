@@ -1,0 +1,18 @@
+/* DAB identity 2C: official palette and flat brand treatments. */
+:root{--navy:#12354B;--navy2:#12354B;--cyan:#00A6AF;--cyan2:#00A6AF;--ink:#203A4A;--text:#476272;--light:#F2F7F8;--line:#D6E4E8;--white:#FFFFFF;--dab-navy:#12354B;--dab-blue:#007D86;--dab-cyan:#00A6AF;--dab-cyan-dark:#007D86;--dab-ink:#203A4A;--dab-muted:#476272;--dab-line:#D6E4E8;--dab-bg:#F2F7F8}
+body{color:#203A4A;background:#FFFFFF}
+.topbar,.top,.dark-section,.band,.footer{background:#12354B!important}
+.home-hero,.hero-left,.page-hero,.services-section,.guides-section,.clients-section,.info-panel{background:#F2F7F8!important}
+.hero-kicker,.eyebrow{background:#E4F2F3!important;color:#12354B!important}
+.logo-link img,.brand-logo img{filter:none!important}
+.main-nav a.active:after{background:#00A6AF!important}
+.header-cta,.primary-btn,.btn{background:#007D86!important;color:#FFFFFF!important;box-shadow:none!important}
+.header-cta:hover,.primary-btn:hover,.btn:hover{background:#12354B!important;filter:none!important}
+.btn.alt,.secondary-btn{background:#FFFFFF!important;color:#12354B!important;border:1px solid #12354B!important}
+.home-hero h1 em{background:none!important;-webkit-text-fill-color:currentColor;color:#007D86!important}
+.section-kicker,.hero-kicker,.text-link,.card a,.guide-grid span{color:#007D86!important}
+.service-icon,.benefit-icon{background:#F2F7F8!important;color:#007D86!important;border-color:#00A6AF!important;box-shadow:none!important}
+.footer-brand img,.footer .site-wrap img,.footer .wrap img{background:#FFFFFF!important;padding:10px 14px!important;border-radius:6px!important;max-height:108px!important;box-shadow:none!important;filter:none!important}
+.footer p,.footer .small,.footer-bottom{color:#D6E4E8!important}
+.dark-section .dark-kicker,.band .dark-kicker,.dark-list li:before{color:#7FD8DC!important}
+a:focus-visible,button:focus-visible{outline:3px solid #00A6AF;outline-offset:4px}

@@ -1,0 +1,1 @@
+{"name": "DAB Prevención y Gestión", "short_name": "DAB", "start_url": "/", "display": "standalone", "background_color": "#FFFFFF", "theme_color": "#12354B", "icons": [{"src": "/assets/dab-icon-192.png", "sizes": "192x192", "type": "image/png"}, {"src": "/assets/dab-icon-512.png", "sizes": "512x512", "type": "image/png"}]}

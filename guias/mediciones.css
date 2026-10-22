@@ -1,37 +1,38 @@
 /* Reading layout for the measurement guides. */
 .measurement-guide .reading-wrap{width:min(880px,92%);margin-inline:auto}
 .measurement-guide .page-hero h1{font-size:clamp(2.1rem,3.6vw,3.3rem);line-height:1.12;max-width:25ch;letter-spacing:-.025em}
-.measurement-guide .lead{color:#455872;line-height:1.75;max-width:75ch}
-.measurement-guide .guide-meta{font-size:.88rem;color:#52657c;margin:24px 0 0}
+.measurement-guide .lead{color:#476272;line-height:1.75;max-width:75ch}
+.measurement-guide .guide-meta{font-size:.88rem;color:#476272;margin:24px 0 0}
 .measurement-guide .guide-meta a{font-weight:700;text-underline-offset:3px}
 .measurement-guide .guide-body{padding:38px 0 64px;font-size:1.05rem;line-height:1.8}
 .measurement-guide .guide-body section{margin:44px 0;scroll-margin-top:115px}
-.measurement-guide .guide-body h2{font-size:clamp(1.5rem,2.5vw,2rem);line-height:1.25;margin:0 0 18px;color:#123d78}
-.measurement-guide .guide-body p{margin:16px 0;color:#43536b}
-.measurement-guide .guide-body a{color:#006e83;text-underline-offset:3px}
-.measurement-guide .guide-body li{margin:10px 0;color:#43536b}
+.measurement-guide .guide-body h2{font-size:clamp(1.5rem,2.5vw,2rem);line-height:1.25;margin:0 0 18px;color:#12354B}
+.measurement-guide .guide-body p{margin:16px 0;color:#476272}
+.measurement-guide .guide-body a{color:#00A6AF;text-underline-offset:3px}
+.measurement-guide .guide-body li{margin:10px 0;color:#476272}
 .measurement-guide .guide-body ol{padding-left:24px}
-.measurement-guide .guide-body .notice{color:#183c5d;line-height:1.75;margin:24px 0}
-.measurement-guide .guide-toc{padding:24px 28px;border:1px solid #dce5ef;border-radius:16px;background:#f6f9fc}
-.measurement-guide .guide-toc h2{font-size:1.1rem;margin:0 0 14px;color:#1a3555}
+.measurement-guide .guide-body .notice{color:#12354B;line-height:1.75;margin:24px 0}
+.measurement-guide .guide-toc{padding:24px 28px;border:1px solid #D6E4E8;border-radius:16px;background:#F2F7F8}
+.measurement-guide .guide-toc h2{font-size:1.1rem;margin:0 0 14px;color:#12354B}
 .measurement-guide .guide-toc ol{margin:0;padding-left:22px;display:grid;gap:7px}
 .measurement-guide .guide-toc li{margin:0}
 .measurement-guide .guide-toc a{text-decoration:none;font-weight:600}
 .measurement-guide .guide-toc a:hover{text-decoration:underline}
-.measurement-guide .guide-sources{border-top:1px solid #dce5ef;padding-top:28px;font-size:.94rem}
+.measurement-guide .guide-sources{border-top:1px solid #D6E4E8;padding-top:28px;font-size:.94rem}
 .measurement-guide .guide-sources h2{font-size:1.3rem}
 .measurement-guide .guide-sources ul{padding-left:20px}
 .measurement-guide .guide-table-wrap{max-width:100%;overflow-x:auto;margin:24px 0}
 .measurement-guide table{width:100%;border-collapse:collapse;font-size:.94rem;line-height:1.6}
-.measurement-guide caption{text-align:left;font-weight:700;color:#123d78;margin-bottom:12px}
-.measurement-guide th,.measurement-guide td{text-align:left;vertical-align:top;padding:15px 14px;border:1px solid #dce5ef}
-.measurement-guide thead{background:#edf5fa;color:#123d78}
-.measurement-guide tbody th{width:25%;background:#f7fafc;font-weight:700}
-.measurement-guide .guide-cta{background:#edf8fa;border:1px solid #d2e8ed;border-radius:16px;padding:28px}
+.measurement-guide caption{text-align:left;font-weight:700;color:#12354B;margin-bottom:12px}
+.measurement-guide th,.measurement-guide td{text-align:left;vertical-align:top;padding:15px 14px;border:1px solid #D6E4E8}
+.measurement-guide thead{background:#F2F7F8;color:#12354B}
+.measurement-guide tbody th{width:25%;background:#F2F7F8;font-weight:700}
+.measurement-guide .guide-cta{background:#F2F7F8;border:1px solid #D6E4E8;border-radius:16px;padding:28px}
 .measurement-guide .guide-cta h2{margin-top:0}
 .measurement-guide .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
-.measurement-guide .guide-related{border-top:1px solid #dce5ef;padding-top:24px}
-.measurement-guide .skip-link{position:fixed;top:-120px;left:16px;z-index:100;background:#082b63;color:#fff;padding:12px 18px;border-radius:8px}
+.measurement-guide .guide-related{border-top:1px solid #D6E4E8;padding-top:24px}
+.measurement-guide .skip-link{position:fixed;top:-120px;left:16px;z-index:100;background:#12354B;color:#FFFFFF;padding:12px 18px;border-radius:8px}
 .measurement-guide .skip-link:focus{top:12px}
-.measurement-guide a:focus-visible{outline:3px solid #0b57b7;outline-offset:4px}
+.measurement-guide a:focus-visible{outline:3px solid #476272;outline-offset:4px}
 @media(max-width:560px){.measurement-guide .guide-body{font-size:1rem;padding-top:26px}.measurement-guide .guide-toc{padding:20px}.measurement-guide .guide-body section{margin:34px 0}.measurement-guide .guide-cta{padding:22px}.measurement-guide th,.measurement-guide td{padding:10px 8px;font-size:.87rem}.measurement-guide .cta-row{display:grid}.measurement-guide .guide-meta{line-height:1.7}}
+
