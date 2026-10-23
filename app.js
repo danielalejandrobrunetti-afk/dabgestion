@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded',()=>{if(!document.querySelector('li
     if (document.getElementById('dab-assistant') || document.querySelector('script[data-dab-assistant]')) return;
     const style = document.createElement('link');
     style.rel = 'stylesheet';
-    style.href = '/assistant.css?v=20261023-1';
+    style.href = '/assistant.css?v=20261023-2';
     const script = document.createElement('script');
-    script.src = '/assistant.js?v=20261023-1';
+    script.src = '/assistant.js?v=20261023-2';
     script.async = true;
     script.dataset.dabAssistant = '1';
     style.addEventListener('load', () => document.body.appendChild(script), { once: true });

@@ -110,7 +110,7 @@
       return { kind: 'time', serviceId, text: 'La fecha de visita, el plazo de entrega y la disponibilidad se coordinan según el trabajo y la documentación recibida. Podés indicar la fecha que necesitás al preparar tu consulta.' };
     }
     if (/precios?|cuanto.*(?:sale|cuesta|vale|cobran)|costos?|presupuest|cotiz|tarifa/.test(value)) {
-      return { kind: 'price', serviceId, text: service ? `Para ${service.label.toLowerCase()}, el presupuesto depende de ${service.cost}. Te ayudo a reunir los datos y Daniel confirma la propuesta.` : 'El presupuesto se prepara según el servicio, la ubicación y el alcance del trabajo. Elegí un servicio o contame qué necesitás para reunir los datos de tu consulta.' };
+      return { kind: 'price', serviceId, text: service ? `Para ${service.label.toLowerCase()}, el presupuesto se define según ${service.cost}. Te ayudo a reunir los datos y Daniel confirma la propuesta.` : 'El presupuesto se prepara según el servicio, la ubicación y el alcance del trabajo. Elegí un servicio o contame qué necesitás para reunir los datos de tu consulta.' };
     }
     if (/zonas?|cobertura|donde|localidad|mendoza|godoy cruz|lujan|maipu|guaymallen|remot|distancia/.test(value) && !detectService(text)) {
       return { kind: 'coverage', serviceId, text: 'DAB trabaja en Mendoza Capital, Godoy Cruz, Luján de Cuyo, Maipú y Guaymallén. Para otras zonas, la visita o modalidad se coordina según el servicio.' };
