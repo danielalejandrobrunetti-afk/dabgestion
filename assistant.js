@@ -264,9 +264,17 @@
     }
     function toggle() { setOpen(panel.hidden); }
     function scrollLog() { log.scrollTop = log.scrollHeight; }
-    function message(text, who = 'assistant') {
+    function message(text, who = 'assistant', withWhatsApp = false) {
       const bubble = element('div', 'dab-chat__message dab-chat__message--' + who);
       bubble.append(element('span', 'dab-chat__sr-only', who === 'user' ? 'Vos: ' : 'Asistente: '), element('p', '', text));
+      if (withWhatsApp && who === 'assistant') {
+        const link = element('a', 'dab-chat__choice dab-chat__choice--primary', 'Escribirle a Daniel por WhatsApp ↗');
+        link.href = whatsappUrl(serviceId, { ...lead }, path);
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        link.dataset.service = serviceId || 'general';
+        bubble.appendChild(link);
+      }
       log.appendChild(bubble);
       while (log.children.length > 40) log.firstElementChild.remove();
       scrollLog();
@@ -335,7 +343,7 @@
       showChoices(ids.map(id => ({ label: services[id].label, action: sayChoice(services[id].label, () => showService(id)) })).concat(homeChoice()));
     }
     function serviceActions() {
-      const items = [intakeChoice()];
+      const items = [waChoice('Escribirle a Daniel por WhatsApp ↗'), intakeChoice()];
       if (services[serviceId]) items.push({ label: 'Ver página del servicio ↗', href: services[serviceId].path });
       items.push({ label: 'Consultar precio', action: sayChoice('Consultar precio', () => respond('¿Cuánto cuesta?')) }, homeChoice());
       showChoices(items);
@@ -346,12 +354,12 @@
       lead = {};
       input.maxLength = 600;
       input.placeholder = 'Preguntá por este servicio…';
-      message(services[id].description);
+      message(services[id].description, 'assistant', true);
       serviceActions();
     }
     function showContact() {
       stage = 'browse';
-      message('Podés continuar con Daniel por WhatsApp al +54 9 261 620-1568. Al abrirlo, podés revisar el mensaje antes de enviarlo.');
+      message('Podés escribirle directamente a Daniel desde este enlace. Se abrirá WhatsApp con tu consulta preparada para que la revises antes de enviarla.', 'assistant', true);
       showChoices([waChoice(), intakeChoice(), homeChoice()]);
     }
     function beginIntake() {
@@ -404,12 +412,15 @@
       if (answer.serviceId && answer.serviceId !== serviceId) lead = {};
       if (answer.serviceId) serviceId = answer.serviceId;
       if (answer.kind === 'fallback' || answer.kind === 'referral') lead.notes = clean(text, 500);
-      message(answer.text);
+      if (!['menu', 'privacy', 'greeting', 'thanks'].includes(answer.kind)) {
+        lead.notes = clean([lead.notes, clean(text, 500)].filter((value, index, all) => value && all.indexOf(value) === index).join('\n'), 500);
+      }
+      message(answer.text, 'assistant', !['menu', 'privacy', 'greeting', 'thanks'].includes(answer.kind));
       if (answer.kind === 'menu') showHome(false);
       else if (answer.kind === 'contact') showChoices([waChoice(), intakeChoice(), homeChoice()]);
       else if (answer.kind === 'greeting' && !serviceId) showHome(false);
       else if (answer.kind === 'privacy') showChoices([{ label: 'Leer privacidad ↗', href: '/privacidad/' }, homeChoice()]);
-      else if (answer.kind === 'fallback' || answer.kind === 'referral') showChoices([intakeChoice(), { label: 'Hablar con Daniel', action: sayChoice('Hablar con Daniel', showContact) }, homeChoice()]);
+      else if (answer.kind === 'fallback' || answer.kind === 'referral') showChoices([waChoice(), intakeChoice(), homeChoice()]);
       else serviceActions();
     }
 
