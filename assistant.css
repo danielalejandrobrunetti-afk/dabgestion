@@ -1,0 +1,38 @@
+/* Isolated widget styles: navy and teal from the DAB 2C identity. */
+#dab-assistant{--chat-navy:#12354b;--chat-teal:#007d86;--chat-ink:#203a4a;--chat-muted:#526b79;--chat-line:#d6e4e8;--chat-bg:#f2f7f8;position:fixed;right:max(20px,env(safe-area-inset-right));bottom:max(20px,env(safe-area-inset-bottom));z-index:10000;font:15px/1.45 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--chat-ink);text-align:left;letter-spacing:normal}
+#dab-assistant *,#dab-assistant *::before,#dab-assistant *::after{box-sizing:border-box}
+#dab-assistant [hidden]{display:none!important}
+#dab-assistant button,#dab-assistant textarea,#dab-assistant a{font:inherit;letter-spacing:normal}
+#dab-assistant button{cursor:pointer;margin:0;text-transform:none;min-width:0}
+#dab-assistant button:focus-visible,#dab-assistant a:focus-visible,#dab-assistant textarea:focus-visible,#dab-assistant [tabindex]:focus-visible{outline:3px solid #00a6af;outline-offset:3px}
+#dab-assistant button:disabled{cursor:default;opacity:.45}
+#dab-assistant svg{display:block;width:22px;height:22px;flex:0 0 auto;pointer-events:none}
+#dab-assistant .dab-chat__launcher{display:flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:13px 19px;border:1px solid rgba(255,255,255,.3);border-radius:30px;background:var(--chat-teal);color:#fff;font-weight:700;box-shadow:0 6px 24px rgba(18,53,75,.22)}
+#dab-assistant .dab-chat__launcher:hover{background:var(--chat-navy)}
+#dab-assistant .dab-chat__panel{position:absolute;right:0;bottom:66px;width:min(390px,calc(100vw - 40px));height:min(640px,calc(100vh - 112px));height:min(640px,calc(100dvh - 112px));display:grid;grid-template-rows:auto minmax(0,1fr) auto auto auto;overflow:hidden;background:#fff;border:1px solid var(--chat-line);border-radius:18px;box-shadow:0 12px 48px rgba(18,53,75,.24)}
+#dab-assistant .dab-chat__header{display:flex;align-items:center;gap:10px;background:var(--chat-navy);color:#fff;padding:14px 12px}
+#dab-assistant .dab-chat__brand{width:38px;height:38px;max-width:none;max-height:none;flex:0 0 auto;background:#fff;border-radius:10px;padding:5px;object-fit:contain;box-shadow:none}
+#dab-assistant .dab-chat__heading{flex:1;min-width:0}
+#dab-assistant .dab-chat__heading h2{margin:0;color:#fff!important;font-size:16px;line-height:1.3;font-weight:750;letter-spacing:0}
+#dab-assistant .dab-chat__heading p{margin:3px 0 0;color:#d6e4e8;font-size:11px;line-height:1.35}
+#dab-assistant .dab-chat__icon-button{display:grid;place-items:center;flex:0 0 38px;width:38px;height:38px;border:0;border-radius:9px;background:transparent;color:#fff;padding:8px}
+#dab-assistant .dab-chat__icon-button:hover{background:rgba(255,255,255,.12)}
+#dab-assistant .dab-chat__icon-button svg{width:19px;height:19px}
+#dab-assistant .dab-chat__log{min-height:0;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;padding:18px 15px 8px;background:var(--chat-bg);scroll-padding:12px}
+#dab-assistant .dab-chat__message{width:fit-content;max-width:94%;margin:0 0 12px;padding:11px 13px;border:1px solid var(--chat-line);border-radius:13px 13px 13px 3px;background:#fff;box-shadow:0 1px 2px rgba(18,53,75,.03)}
+#dab-assistant .dab-chat__message p{margin:0;color:var(--chat-ink);font-size:14px;line-height:1.55;white-space:pre-wrap;overflow-wrap:anywhere}
+#dab-assistant .dab-chat__message--user{margin-left:auto;border-color:#b4dadd;border-radius:13px 13px 3px 13px;background:#e0f1f2}
+#dab-assistant .dab-chat__choices{display:flex;flex-wrap:wrap;gap:7px;padding:12px 14px;background:#fff;border-top:1px solid var(--chat-line);max-height:180px;overflow-y:auto;overscroll-behavior:contain}
+#dab-assistant .dab-chat__choice{display:block;max-width:100%;padding:9px 11px;border:1px solid #a9cbd0;border-radius:9px;background:#fff;color:var(--chat-navy)!important;text-align:left;text-decoration:none;white-space:normal;font-size:12px;font-weight:650;line-height:1.35;overflow-wrap:anywhere;box-shadow:none}
+#dab-assistant .dab-chat__choice:hover{background:#eaf4f5;border-color:var(--chat-teal)}
+#dab-assistant .dab-chat__choice--primary{background:var(--chat-teal);border-color:var(--chat-teal);color:#fff!important}
+#dab-assistant .dab-chat__choice--primary:hover{background:var(--chat-navy);border-color:var(--chat-navy)}
+#dab-assistant .dab-chat__composer{display:flex;align-items:center;gap:8px;margin:0;padding:10px 12px 8px;border-top:1px solid var(--chat-line);background:#fff}
+#dab-assistant .dab-chat__input{display:block;flex:1;width:0;min-width:0;height:43px;max-height:80px;padding:11px 10px;border:1px solid #b9cdd3;border-radius:10px;resize:none;background:#fff;color:var(--chat-ink);font-size:16px;line-height:20px;box-shadow:none}
+#dab-assistant .dab-chat__input::placeholder{color:#617a87;opacity:1;font-size:13px}
+#dab-assistant .dab-chat__send{display:grid;place-items:center;flex:0 0 43px;width:43px;height:43px;padding:10px;border:0;border-radius:10px;background:var(--chat-teal);color:#fff}
+#dab-assistant .dab-chat__privacy{margin:0!important;padding:0 12px 10px;text-align:center;font-size:10px;line-height:1.4;color:var(--chat-muted);background:#fff}
+#dab-assistant .dab-chat__privacy a{font-size:10px;color:var(--chat-muted)!important;text-decoration:underline}
+#dab-assistant .dab-chat__sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:560px){#dab-assistant{right:max(12px,env(safe-area-inset-right));bottom:max(12px,env(safe-area-inset-bottom))}#dab-assistant .dab-chat__launcher{min-height:48px;padding:11px 15px;font-size:13px}#dab-assistant .dab-chat__panel{width:calc(100vw - 24px);bottom:60px;height:min(620px,calc(100vh - 92px));height:min(620px,calc(100dvh - 92px));border-radius:15px}#dab-assistant .dab-chat__choices{max-height:166px}#dab-assistant .dab-chat__header{padding:12px 10px}}
+@media(max-height:560px){#dab-assistant .dab-chat__panel{bottom:58px;height:calc(100dvh - 80px)}#dab-assistant .dab-chat__choices{max-height:100px;padding:8px 12px}#dab-assistant .dab-chat__header{padding:8px 10px}#dab-assistant .dab-chat__privacy{padding-bottom:5px}}
