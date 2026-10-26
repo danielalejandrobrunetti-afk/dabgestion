@@ -62,6 +62,7 @@
     window.gtag('event', eventName, {
       send_to: measurementId,
       contact_method: method,
+      contact_position: anchor.closest(".home-hero, .hero") ? "hero" : anchor.closest("footer") ? "footer" : anchor.closest("header") ? "header" : "content",
       service: service,
       page_path: pagePath,
       page_location: pageLocation
