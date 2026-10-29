@@ -7,7 +7,13 @@
 
   const measurementId = 'G-0JC4Y7FJCT';
   const pagePath = window.location.pathname;
-  const pageLocation = window.location.origin + pagePath;
+  const attributionUrl = new URL(window.location.origin + pagePath);
+  const query = new URLSearchParams(window.location.search);
+  ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'gclid', 'gbraid', 'wbraid'].forEach(key => {
+    const value = query.get(key);
+    if (value && value.length <= 256 && /^[a-zA-Z0-9._~%+ \-]+$/.test(value)) attributionUrl.searchParams.set(key, value);
+  });
+  const pageLocation = attributionUrl.href;
   let referrer = '';
   try {
     if (document.referrer) {
@@ -56,6 +62,8 @@
     else if (target.protocol === 'mailto:') { eventName = 'email_click'; method = 'email'; }
     else if (target.protocol === 'https:' && ['wa.me', 'api.whatsapp.com', 'web.whatsapp.com'].includes(target.hostname)) {
       eventName = 'whatsapp_click'; method = 'whatsapp';
+    } else if (target.protocol === 'https:' && target.hostname === 'g.page' && target.pathname.endsWith('/review')) {
+      eventName = 'review_click'; method = 'google_review';
     } else return;
     const declared = anchor.dataset.service || document.body.dataset.service;
     const service = declared && /^[a-z0-9_]{1,40}$/.test(declared) ? declared : serviceFromPath();
