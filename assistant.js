@@ -58,7 +58,7 @@
       cost: 'la actividad, la cantidad de personal, las sedes y la frecuencia de visitas'
     },
     capacitaciones: {
-      label: 'Capacitaciones', path: '/capacitacion-higiene-seguridad-empresas-mendoza/',
+      label: 'Capacitaciones', path: '/capacitaciones-higiene-seguridad-mendoza/',
       description: 'Capacitaciones adaptadas a la actividad y los riesgos: matafuegos, EPP, trabajo en altura, riesgo eléctrico, emergencias y otros temas. La modalidad se coordina según la necesidad.',
       question: '¿Qué tema necesitan y cuántas personas participarían? Podés agregar duración o modalidad preferida.',
       cost: 'el tema, los participantes, la duración, la ubicación y la modalidad'

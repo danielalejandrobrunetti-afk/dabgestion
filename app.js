@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded',()=>{if(!document.querySelector('li
     style.rel = 'stylesheet';
     style.href = '/assistant.css?v=20261023-3';
     const script = document.createElement('script');
-    script.src = '/assistant.js?v=20261023-3';
+    script.src = '/assistant.js?v=20261122';
     script.async = true;
     script.dataset.dabAssistant = '1';
     style.addEventListener('load', () => document.body.appendChild(script), { once: true });

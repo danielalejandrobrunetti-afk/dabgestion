@@ -39,6 +39,8 @@
   document.head.appendChild(tag);
 
   const serviceFromPath = () => {
+    if (pagePath.includes('habilitacion')) return 'habilitaciones';
+    if (pagePath.includes('servicio-mensual')) return 'servicio_mensual';
     if (pagePath.includes('puesta-tierra') || pagePath.includes('puesta-a-tierra')) return 'puesta_tierra';
     if (pagePath.includes('ruido')) return 'ruido_laboral';
     if (pagePath.includes('iluminacion')) return 'iluminacion';
@@ -70,7 +72,7 @@
     window.gtag('event', eventName, {
       send_to: measurementId,
       contact_method: method,
-      contact_position: anchor.closest(".home-hero, .hero") ? "hero" : anchor.closest("footer") ? "footer" : anchor.closest("header") ? "header" : "content",
+      contact_position: anchor.closest('.dab-chat') ? 'assistant' : anchor.closest('.home-hero, .page-hero, .hero') ? 'hero' : anchor.closest('footer') ? 'footer' : anchor.closest('header, nav, .topbar, .top') ? 'header' : 'content',
       service: service,
       page_path: pagePath,
       page_location: pageLocation
