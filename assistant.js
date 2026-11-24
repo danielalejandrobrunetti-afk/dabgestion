@@ -98,7 +98,7 @@
     const serviceId = detectService(text) || (services[currentService] ? currentService : null);
     const service = services[serviceId];
     if (/credito.{0,8}fiscal|ucap|sepyme|reintegro/.test(value)) {
-      return { kind: 'referral', serviceId, text: 'Para consultas sobre crédito fiscal o inscripción en programas de capacitación, Daniel debe revisar el programa y el caso particular. Podemos dejarle tu consulta preparada.' };
+      return { kind: 'referral', serviceId, text: 'Para consultas sobre crédito fiscal o inscripción en programas de capacitación, DAB revisa el programa y el caso particular. Podemos preparar tu consulta.' };
     }
     if (/privacidad|datos personales|guardan|almacenan|historial/.test(value)) {
       return { kind: 'privacy', serviceId, text: 'Esta conversación se mantiene en la página mientras la tenés abierta. El asistente no guarda un historial al recargarla ni envía el contenido a Analytics. Si continuás en WhatsApp, se abrirá el mensaje con los datos que ingresaste para que lo revises antes de enviarlo.' };
@@ -110,22 +110,22 @@
       return { kind: 'time', serviceId, text: 'La fecha de visita, el plazo de entrega y la disponibilidad se coordinan según el trabajo y la documentación recibida. Podés indicar la fecha que necesitás al preparar tu consulta.' };
     }
     if (/precios?|cuanto.*(?:sale|cuesta|vale|cobran)|costos?|presupuest|cotiz|tarifa/.test(value)) {
-      return { kind: 'price', serviceId, text: service ? `Para ${service.label.toLowerCase()}, el presupuesto se define según ${service.cost}. Te ayudo a reunir los datos y Daniel confirma la propuesta.` : 'El presupuesto se prepara según el servicio, la ubicación y el alcance del trabajo. Elegí un servicio o contame qué necesitás para reunir los datos de tu consulta.' };
+      return { kind: 'price', serviceId, text: service ? `Para ${service.label.toLowerCase()}, el presupuesto se define según ${service.cost}. Te ayudo a reunir los datos y DAB confirma la propuesta.` : 'El presupuesto se prepara según el servicio, la ubicación y el alcance del trabajo. Elegí un servicio o contame qué necesitás para reunir los datos de tu consulta.' };
     }
     if (/zonas?|cobertura|donde|localidad|mendoza|godoy cruz|lujan|maipu|guaymallen|remot|distancia/.test(value) && !detectService(text)) {
       return { kind: 'coverage', serviceId, text: 'DAB trabaja en Mendoza Capital, Godoy Cruz, Luján de Cuyo, Maipú y Guaymallén. Para otras zonas, la visita o modalidad se coordina según el servicio.' };
     }
-    if (/hablar|persona|daniel|telefono|contact|whatsapp|wasap|\bwsp\b|\bwpp\b|\bhumano\b/.test(value)) {
-      return { kind: 'contact', serviceId, text: 'Podés continuar con Daniel por WhatsApp al +54 9 261 620-1568. También puedo ayudarte a preparar los datos de tu consulta.' };
+    if (/hablar|persona|telefono|contact|whatsapp|wasap|\bwsp\b|\bwpp\b|\bhumano\b/.test(value)) {
+      return { kind: 'contact', serviceId, text: 'Podés continuar con DAB por WhatsApp al +54 9 261 620-1568. También puedo ayudarte a preparar los datos de tu consulta.' };
     }
     if (/^(hola|buenas|buen dia|buenos dias|buenas tardes|buenas noches)[!,.\s]*$/.test(value)) {
       return { kind: 'greeting', serviceId, text: '¡Hola! ¿Qué servicio necesitás? Podés elegir una opción o escribir tu consulta.' };
     }
     if (/^(gracias|muchas gracias|perfecto|ok|listo)[!,.\s]*$/.test(value)) {
-      return { kind: 'thanks', serviceId, text: '¡De nada! Si querés, preparamos los datos para que puedas consultar con Daniel.' };
+      return { kind: 'thanks', serviceId, text: '¡De nada! Si querés, preparamos los datos para que puedas consultar con DAB.' };
     }
     if (detectService(text)) return { kind: 'service', serviceId, text: service.description };
-    return { kind: 'fallback', serviceId, text: 'Puedo orientarte sobre los servicios de DAB y ayudarte a preparar una consulta. Para revisar un caso particular, podés continuar con Daniel por WhatsApp.' };
+    return { kind: 'fallback', serviceId, text: 'Puedo orientarte sobre los servicios de DAB y ayudarte a preparar una consulta. Para revisar un caso particular, podés continuar con DAB por WhatsApp.' };
   }
 
   function buildMessage(serviceId, lead = {}, pagePath = '/') {
@@ -268,7 +268,7 @@
       const bubble = element('div', 'dab-chat__message dab-chat__message--' + who);
       bubble.append(element('span', 'dab-chat__sr-only', who === 'user' ? 'Vos: ' : 'Asistente: '), element('p', '', text));
       if (withWhatsApp && who === 'assistant') {
-        const link = element('a', 'dab-chat__choice dab-chat__choice--primary', 'Escribirle a Daniel por WhatsApp ↗');
+        const link = element('a', 'dab-chat__choice dab-chat__choice--primary', 'Consultar con DAB por WhatsApp');
         link.href = whatsappUrl(serviceId, { ...lead }, path);
         link.target = '_blank';
         link.rel = 'noopener noreferrer';
@@ -333,7 +333,7 @@
         { label: 'Higiene y Seguridad', action: sayChoice('Higiene y Seguridad', () => showService('higiene_seguridad')) },
         { label: 'Capacitaciones', action: sayChoice('Capacitaciones', () => showService('capacitaciones')) },
         { label: 'Psicotécnicos laborales', action: sayChoice('Psicotécnicos laborales', () => showService('psicotecnicos')) },
-        { label: 'Hablar con Daniel', action: sayChoice('Hablar con Daniel', showContact) }
+        { label: 'Hablar con DAB', action: sayChoice('Hablar con DAB', showContact) }
       ]);
     }
     function showCategory(category) {
@@ -343,7 +343,7 @@
       showChoices(ids.map(id => ({ label: services[id].label, action: sayChoice(services[id].label, () => showService(id)) })).concat(homeChoice()));
     }
     function serviceActions() {
-      const items = [waChoice('Escribirle a Daniel por WhatsApp ↗'), intakeChoice()];
+      const items = [waChoice('Consultar con DAB por WhatsApp'), intakeChoice()];
       if (services[serviceId]) items.push({ label: 'Ver página del servicio ↗', href: services[serviceId].path });
       items.push({ label: 'Consultar precio', action: sayChoice('Consultar precio', () => respond('¿Cuánto cuesta?')) }, homeChoice());
       showChoices(items);
@@ -359,7 +359,7 @@
     }
     function showContact() {
       stage = 'browse';
-      message('Podés escribirle directamente a Daniel desde este enlace. Se abrirá WhatsApp con tu consulta preparada para que la revises antes de enviarla.', 'assistant', true);
+      message('Podés contactar directamente a DAB desde este enlace. Se abrirá WhatsApp con tu consulta preparada para que la revises antes de enviarla.', 'assistant', true);
       showChoices([waChoice(), intakeChoice(), homeChoice()]);
     }
     function beginIntake() {
